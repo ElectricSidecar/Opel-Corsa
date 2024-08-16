@@ -9,7 +9,7 @@
   ]},
 { "hdr": "6B4", "rax": "694", "fcm1": true, "cmd": {"22": "D49C"}, "freq": 1,
   "signals": [
-    {"id": "CORSA_ODO", "path": "Trips", "fmt": { "len": 32, "max": 429496729, "div": 10, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+    {"id": "CORSA_ODO", "path": "Trips", "fmt": { "len": 32, "max": 429496729, "div": 1000, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
 { "hdr": "6B4", "rax": "694", "fcm1": true, "cmd": {"22": "D810"}, "freq": 1,
   "signals": [
