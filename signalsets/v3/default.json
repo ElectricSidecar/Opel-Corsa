@@ -1,2 +1,35 @@
-{ "commands": []
+{ "commands": [
+{ "hdr": "6A2", "rax": "682", "fcm1": true, "cmd": {"22": "D402"}, "freq": 1,
+  "signals": [
+    {"id": "CORSA_VSS", "path": "Movement", "fmt": { "len": 16, "max": 1000, "div": 10, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "6B4", "rax": "694", "fcm1": true, "cmd": {"22": "D410"}, "freq": 1,
+  "signals": [
+    {"id": "CORSA_HVBAT_SOC", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 512, "unit": "percent" }, "name": "High voltage battery charge (calibrated)", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "6B4", "rax": "694", "fcm1": true, "cmd": {"22": "D49C"}, "freq": 1,
+  "signals": [
+    {"id": "CORSA_ODO", "path": "Trips", "fmt": { "len": 32, "max": 429496729, "div": 10, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "6B4", "rax": "694", "fcm1": true, "cmd": {"22": "D810"}, "freq": 1,
+  "signals": [
+    {"id": "CORSA_HVBAT_SOC_RAW", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 512, "unit": "percent" }, "name": "High voltage battery charge", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "6B4", "rax": "694", "fcm1": true, "cmd": {"22": "D860"}, "freq": 3600,
+  "signals": [
+    {"id": "CORSA_HVBAT_SOH", "path": "Battery", "fmt": {"bix": 8, "len": 16, "max": 100, "div": 16, "unit": "percent" }, "name": "High voltage battery health", "suggestedMetric": "stateOfHealth"}
+  ]},
+{ "hdr": "6B4", "rax": "694", "fcm1": true, "cmd": {"22": "D865"}, "freq": 1,
+  "signals": [
+    {"id": "CORSA_HVBAT_KWH", "path": "Battery", "fmt": { "len": 16, "max": 3276.75, "div": 64, "unit": "kilowattHours" }, "name": "HV battery energy", "description": "Energy stored in the high voltage battery"}
+  ]},
+{ "hdr": "6B4", "rax": "694", "fcm1": true, "cmd": {"22": "D86F"}, "freq": 1,
+  "signals": [
+    {"id": "CORSA_HVBAT_MIN_VOLT", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "millivolts" }, "name": "High voltage minimum voltage"}
+  ]},
+{ "hdr": "6B4", "rax": "694", "fcm1": true, "cmd": {"22": "D870"}, "freq": 1,
+  "signals": [
+    {"id": "CORSA_HVBAT_MAX_VOLT", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "millivolts" }, "name": "High voltage maximum voltage"}
+  ]}
+]
 }
