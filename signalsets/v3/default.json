@@ -15,6 +15,10 @@
   "signals": [
     {"id": "CORSA_HVBAT_SOC_RAW", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 512, "unit": "percent" }, "name": "High voltage battery charge", "suggestedMetric": "stateOfCharge"}
   ]},
+{ "hdr": "6B4", "rax": "694", "fcm1": true, "cmd": {"22": "D815"}, "freq": 1,
+  "signals": [
+    {"id": "CORSA_HVBAT_VOLT", "path": "Battery", "fmt": { "len": 16, "max": 4095, "div": 16, "unit": "volts" }, "name": "High voltage battery voltage"}
+  ]},
 { "hdr": "6B4", "rax": "694", "fcm1": true, "cmd": {"22": "D860"}, "freq": 3600,
   "signals": [
     {"id": "CORSA_HVBAT_SOH", "path": "Battery", "fmt": {"bix": 8, "len": 16, "max": 100, "div": 16, "unit": "percent" }, "name": "High voltage battery health", "suggestedMetric": "stateOfHealth"}
